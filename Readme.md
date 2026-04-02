@@ -1,8 +1,11 @@
 # PlayZ-IPTV-Extractor
 
-
- 
 A reverse-engineered playlist extractor that decrypts and extracts thousands of IPTV channels from an encrypted Android streaming application. Generates a standard M3U playlist compatible with any IPTV player.
+
+
+## Channels_List
+
+All channels list can be found in CHANNELS_LIST.md file.
  
 ## What This Does
  
@@ -106,7 +109,7 @@ After running the extractor, generate a browsable channel list:
 python generate_channel_list.py
 ```
  
-This creates `CHANNELS.md` — a formatted list of every channel organized by category with counts. Check it out here: **[Full Channel List](CHANNELS.md)**
+This creates `CHANNELS_LIST.md` — a formatted list of every channel organized by category with counts. Check here: **[Full Channel List](CHANNELS_LIST.md)**
  
 ### Pre-built Playlist
  
@@ -148,8 +151,8 @@ https://stream.example.com/live/channel/master.m3u8
 ```
 PlayZ-IPTV-Extractor/
 ├── build_all.py              # Main extractor — multithreaded with resume support
-├── generate_channel_list.py  # Generates CHANNELS.md from playlist.m3u
-├── CHANNELS.md               # Browsable list of all extracted channels
+├── generate_channel_list.py  # Generates CHANNELS_LIST.md from playlist.m3u
+├── CHANNELS_LIST.md               # Browsable list of all extracted channels
 ├── requirements.txt          # Python dependencies
 └── README.md                 # You are here
 ```
@@ -176,3 +179,12 @@ This wasn't a weekend project. The extraction required:
 4. **Extracting config data** via ADB before the app's environment detection could intervene
 5. **Handling two completely different data source types** (encrypted API vs external M3U) with different authentication requirements
 6. **Multiple iterations** of the extraction script — from single-threaded proof of concept to the final multithreaded, crash-resilient version
+
+
+## A Note on Longevity
+
+This tool works by exploiting the app's current encryption scheme, API endpoints, and server configuration. Any of these could change without notice — new keys, new endpoints, new obfuscation layers. If that happens, the extractor will break.
+
+I'll try to keep up with changes when I can, but no promises. This project started because I was tired of squinting at IPTV on my phone and just wanted to watch on my PC. The reverse engineering rabbit hole turned out to be way deeper (and more fun) than expected, but at the end of the day — my playlist is generated, my channels are playing on a proper screen, and the itch is scratched.
+
+If it breaks and you're feeling adventurous, the methodology documented above should point you in the right direction to crack it again yourself. That's the real takeaway here — not the playlist, but the process.

@@ -37,9 +37,9 @@ for group in sorted(categories.keys()):
         parts.append("| " + str(i + 1) + " | " + name + " |\n")
     parts.append("\n")
 
-f = open("CHANNELS.md", "w", encoding="utf-8")
+f = open("CHANNELS_LIST.md", "w", encoding="utf-8")
 f.write("".join(parts))
 f.close()
 
-print("Generated CHANNELS.md")
+print("Generated CHANNELS_LIST.md")
 print("Total: " + str(total) + " channels in " + str(len(categories)) + " categories")
