@@ -6,6 +6,15 @@ A reverse-engineered playlist extractor that decrypts and extracts thousands of 
 ## Channels_List
 
 All channels list can be found in CHANNELS_LIST.md file.
+
+## Pre-built Playlist
+ 
+Don't want to run the extractor yourself? Download the latest pre-built playlist:
+ 
+**[Download playlist.m3u](https://github.com/Abdul-Moiz-i999/PlayZ-IPTV-Extractor/releases/download/v1.0/playlist.m3u)**
+ 
+> Note: Stream URLs expire and change frequently. The pre-built playlist may have dead links. For the freshest results, run the extractor yourself.
+ 
  
 ## What This Does
  
@@ -111,14 +120,6 @@ python generate_channel_list.py
  
 This creates `CHANNELS_LIST.md` — a formatted list of every channel organized by category with counts. Check here: **[Full Channel List](CHANNELS_LIST.md)**
  
-### Pre-built Playlist
- 
-Don't want to run the extractor yourself? Download the latest pre-built playlist:
- 
-**[Download playlist.m3u](https://github.com/Abdul-Moiz-i999/PlayZ-IPTV-Extractor/releases/download/v1.0/playlist.m3u)**
- 
-> Note: Stream URLs expire and change frequently. The pre-built playlist may have dead links. For the freshest results, run the extractor yourself.
- 
 ### Features
  
 - **Multithreaded** — 10 concurrent workers per category, ~10x faster than sequential extraction
@@ -179,7 +180,6 @@ This wasn't a weekend project. The extraction required:
 4. **Extracting config data** via ADB before the app's environment detection could intervene
 5. **Handling two completely different data source types** (encrypted API vs external M3U) with different authentication requirements
 6. **Multiple iterations** of the extraction script — from single-threaded proof of concept to the final multithreaded, crash-resilient version
-
 
 ## A Note on Longevity
 
