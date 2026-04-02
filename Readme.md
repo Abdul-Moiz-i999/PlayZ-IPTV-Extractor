@@ -112,7 +112,7 @@ This creates `CHANNELS.md` — a formatted list of every channel organized by ca
  
 Don't want to run the extractor yourself? Download the latest pre-built playlist:
  
-**[Download playlist.m3u](url add todo)**
+**[Download playlist.m3u](https://github.com/Abdul-Moiz-i999/PlayZ-IPTV-Extractor/releases/download/v1.0/playlist.m3u)**
  
 > Note: Stream URLs expire and change frequently. The pre-built playlist may have dead links. For the freshest results, run the extractor yourself.
  
