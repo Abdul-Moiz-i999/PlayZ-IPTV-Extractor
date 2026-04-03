@@ -94,7 +94,7 @@ Encrypted Index File
 ## Installation
  
 ```bash
-git clone https://github.com/YOUR_USERNAME/PlayZ-IPTV-Extractor.git
+git clone https://github.com/Abdul-Moiz-i999/PlayZ-IPTV-Extractor.git
 cd PlayZ-IPTV-Extractor
 pip install pycryptodome
 ```
