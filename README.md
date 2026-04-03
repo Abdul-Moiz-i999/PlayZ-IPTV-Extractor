@@ -1,6 +1,10 @@
 # PlayZ-IPTV-Extractor
 
-A reverse-engineered playlist extractor that decrypts and extracts thousands of IPTV channels from an encrypted Android streaming application. Generates a standard M3U playlist compatible with any IPTV player.
+A reverse-engineered playlist extractor that decrypts and extracts thousands of IPTV channels from an encrypted Android streaming application. Generates a standard M3U playlist compatible with any IPTV player. It extracts from the app PlayZ TV - Live Sports & Movies
+
+<img width="1919" height="944" alt="iptv-0" src="https://github.com/user-attachments/assets/5efb2a16-621d-49fd-be97-4e97f779ef77" />
+
+<img width="1918" height="1004" alt="iptv-1" src="https://github.com/user-attachments/assets/be90b2af-4da4-4ab5-9717-16a983cdc3c5" />
 
 
 ## Channels_List
